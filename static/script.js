@@ -1,8 +1,7 @@
-
-
 $(document).ready(function() {
 
   $("#search").click(function() {
+    console.log($("#check_box_value").is(":checked"));
     // recieves the parameters from the website and sends them to the python server
     var searchReq = $.get("/sendRequest/" + $("#locality").val() + ","+ $("#region").val() + ","+ $("#postal_code").val());
         var map;
@@ -44,11 +43,7 @@ $(document).ready(function() {
                   s.src='http://chrisawren.com/widgets/yelp/yelpv2.js' ;
                   var x = document.getElementsByTagName('script')[0];
                   x.parentNode.insertBefore(s, x);
-                  
                 });
-                
-                
-
             });
           };
         });

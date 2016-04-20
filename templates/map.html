@@ -25,14 +25,13 @@
         padding-left: 2%;
         float: left;
       }
+      #checkbox{
+        font-size: 18px;
+      }
       header{
         font-size: 40px;
       }
-    </style>
-
-    <!-- to be used to put yelp reviews on the site when the user clicks on a marker -->
-    
- 
+    </style>    
   </head>
   <body>
     <div>
@@ -40,12 +39,12 @@
             <input type="text" id="locality" placeholder="Enter a location...">
             <input type="text" id="region" placeholder="Enter a region...">
             <input type="text" id="postal_code" placeholder="Enter a postal code...">
+            <label id="checkbox"><input id="check_box_value" type="checkbox" name="checkbox" value="value">Current Location</label>
             <button id="search">Search</button>
         </center></header>
     </div>
     <div id="map"></div>
     <div id='yelpwidget'></div>
-    <!--  -->
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ3OgV-uc9YSiSb6WjV259v67FXVwL2z4">
     </script>
