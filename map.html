@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>Travel Buddy</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 40%;
+        margin-left: 35%;
+        margin-top: 5%;
+        padding-top: 5%;
+        float: left;
+        width: 30%;
+      }
+      #yelpwidget{
+        margin-top: 5%;
+        padding-left: 2%;
+        float: left;
+      }
+      #checkbox{
+        font-size: 18px;
+      }
+      header{
+        font-size: 40px;
+      }
+    </style>    
+  </head>
+  <body>
+    <div>
+        <header><center>Travel Buddy<br>
+            <input type="text" id="locality" placeholder="Enter a location...">
+            <input type="text" id="region" placeholder="Enter a region...">
+            <input type="text" id="postal_code" placeholder="Enter a postal code...">
+            <label id="checkbox"><input id="check_box_value" type="checkbox" name="checkbox" value="value">Current Location</label>
+            <button id="search">Search</button>
+        </center></header>
+    </div>
+    <div id="map"></div>
+    <div id="yelpwidget"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ3OgV-uc9YSiSb6WjV259v67FXVwL2z4">
+    </script>
+  </body>
+</html>
