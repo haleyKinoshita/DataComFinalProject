@@ -87,7 +87,7 @@ def locu_search(query):
   return response
 
 if __name__ ==  "__main__":
-  app.run()
+  app.run(host="10.109.129.61",port=2000)
 
 
 
