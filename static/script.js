@@ -1,3 +1,8 @@
+/*
+  This javascript file handles click events from the client
+  It will send requests to the server and will receive json response
+
+*/
 $(document).ready(function() {
 
   $("#search").click(function() {

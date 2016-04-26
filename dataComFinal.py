@@ -2,7 +2,8 @@
   this serves as the server currently running on local host
   will recieve parameters from the client (website) when the 
   user presses search and will return back the json in a string
-  from the locu api 
+  from the locu api then will query the yelp api to display reviews
+  based on what the user clicks
 '''
 import rauth
 import time
@@ -87,7 +88,7 @@ def locu_search(query):
   return response
 
 if __name__ ==  "__main__":
-  app.run(host="10.109.129.61",port=2000)
+  app.run()
 
 
 

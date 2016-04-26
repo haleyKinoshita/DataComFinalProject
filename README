@@ -1,0 +1,15 @@
+Please note to run this on your computer you must have the following installed:
+
+- Python 3
+- Python Libraries
+	- Rauth
+	- urllib
+	- flask
+You also should obtain your own API keys from:
+	- Google Maps
+	- Locu
+	- Yelp
+
+However ours are provided
+
+Please see documentation in each file for more information
